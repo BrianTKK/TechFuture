@@ -59,26 +59,24 @@ const FaqSection = () => {
     };
 
   return (
-    <section id="faq" className="py-20 sm:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">Perguntas Frequentes</h2>
-          <p className="mt-4 text-lg text-slate-400">
-            Tudo o que você precisa saber para começar sua jornada no mundo da tecnologia.
-          </p>
-        </div>
-        <div className="mt-12">
-            {FAQ_DATA.map((item, index) => (
-                <AccordionItem 
-                    key={index}
-                    item={item}
-                    isOpen={openIndex === index}
-                    onClick={() => handleClick(index)}
-                />
-            ))}
-        </div>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+      <div className="text-center">
+        <h2 className="text-3xl font-extrabold text-white sm:text-4xl">Perguntas Frequentes</h2>
+        <p className="mt-4 text-lg text-slate-400">
+          Tudo o que você precisa saber para começar sua jornada no mundo da tecnologia.
+        </p>
       </div>
-    </section>
+      <div className="mt-12">
+          {FAQ_DATA.map((item, index) => (
+              <AccordionItem 
+                  key={index}
+                  item={item}
+                  isOpen={openIndex === index}
+                  onClick={() => handleClick(index)}
+              />
+          ))}
+      </div>
+    </div>
   );
 };
 

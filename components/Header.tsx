@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-slate-900/70 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full bg-black/70 backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">

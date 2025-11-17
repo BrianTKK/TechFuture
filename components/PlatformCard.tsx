@@ -13,7 +13,7 @@ const PlatformCard: React.FC<PlatformCardProps> = ({ platform }) => {
       href={platform.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block p-6 bg-slate-800/50 border border-slate-700 rounded-lg transition-all duration-300 hover:border-cyan-500 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
+      className="group block p-6 bg-slate-800/50 border border-slate-700 rounded-lg transition-all duration-300 hover:border-purple-500 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 hover:shadow-2xl hover:shadow-purple-500/20"
     >
       <div className="flex justify-between items-start">
         <div className="flex items-center gap-3">
@@ -26,11 +26,11 @@ const PlatformCard: React.FC<PlatformCardProps> = ({ platform }) => {
               e.currentTarget.style.display = 'none';
             }}
           />
-          <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+          <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
             {platform.name}
           </h3>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500 group-hover:text-cyan-400 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-500 group-hover:text-purple-400 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
       </div>
       <p className="mt-2 text-slate-400">{platform.description}</p>
       <div className="mt-4 flex flex-wrap gap-2">

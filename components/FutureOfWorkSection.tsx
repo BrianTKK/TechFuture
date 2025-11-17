@@ -1,54 +1,66 @@
 import React from 'react';
 
-interface FeatureCardProps {
-  icon: React.ReactNode;
-  title: string;
-  children: React.ReactNode;
-}
-
-// Fix: Explicitly typed component as React.FC to resolve type inference issue with the 'children' prop.
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, children }) => (
-  <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 text-center">
-    <div className="flex justify-center items-center mb-4 h-12 w-12 rounded-full bg-cyan-900/50 text-cyan-400 mx-auto">
-      {icon}
-    </div>
-    <h3 className="mb-2 text-xl font-bold text-white">{title}</h3>
-    <p className="text-slate-400">{children}</p>
-  </div>
-);
-
 const FutureOfWorkSection = () => {
   return (
-    <section id="about" className="py-20 sm:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">A Revolução já Começou</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-400">
-            Automação, Inteligência Artificial e novas formas de colaboração estão redefinindo o mercado de trabalho.
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl font-extrabold text-white sm:text-4xl">A Encruzilhada do Amanhã: Adapte-se ou Fique Para Trás</h2>
+        <p className="mt-4 max-w-3xl mx-auto text-lg text-slate-400">
+          Estamos vivendo a mais profunda transformação no mercado de trabalho da história. Não é uma onda passageira, é uma mudança de era. A questão não é *se* a tecnologia vai impactar sua carreira, mas *como* e *quando*.
+        </p>
+      </div>
+
+      <div className="max-w-4xl mx-auto space-y-12 text-slate-300 text-lg leading-relaxed">
+        <div>
+          <h3 className="text-2xl font-bold text-cyan-400 mb-4">O Fim de uma Era: Profissões em Risco</h3>
+          <p className="mb-4">
+            A automação e a Inteligência Artificial (IA) estão se tornando incrivelmente eficientes em tarefas repetitivas e baseadas em regras. Funções que antes exigiam um ser humano para entrada de dados, operação de caixa, telemarketing ou até mesmo certas análises contábeis estão sendo rapidamente assumidas por algoritmos. Isso não é motivo para pânico, mas para um despertar: o valor humano está se deslocando de tarefas de "fazer" para tarefas de "pensar", "criar" e "conectar".
+          </p>
+          <blockquote className="border-l-4 border-purple-500 pl-4 italic text-slate-400">
+            "A automação aplicada a uma operação eficiente aumentará a eficiência. A automação aplicada a uma operação ineficiente aumentará a ineficiência." - Bill Gates
+          </blockquote>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-bold text-cyan-400 mb-4">A Evolução: Profissões Adaptadas pela Tecnologia</h3>
+          <p className="mb-4">
+            A maioria das profissões não desaparecerá, mas será radicalmente transformada. A tecnologia se tornará uma parceira, uma ferramenta que amplifica nossas capacidades. Pense nisso:
+          </p>
+          <ul className="list-disc list-inside space-y-3 mb-4 pl-4">
+            <li><strong>Médicos</strong> usarão IA para analisar exames e prever doenças com uma precisão antes inimaginável, permitindo que se concentrem no cuidado ao paciente.</li>
+            <li><strong>Advogados</strong> utilizarão softwares para analisar milhares de documentos em minutos, identificando precedentes cruciais para seus casos.</li>
+            <li><strong>Designers e Arquitetos</strong> criarão protótipos em realidade virtual, permitindo que clientes "entrem" em seus projetos antes da primeira pedra ser assentada.</li>
+            <li><strong>Profissionais de Marketing</strong> deixarão de depender da intuição e usarão análise de dados para entender o comportamento do consumidor em tempo real.</li>
+          </ul>
+          <p>
+            Em todos esses cenários, o profissional que dominar as ferramentas tecnológicas terá uma vantagem competitiva imensa. A tecnologia não os substitui, ela os torna melhores, mais rápidos e mais eficazes.
           </p>
         </div>
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
-          <FeatureCard 
-            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>}
-            title="Novas Habilidades"
-          >
-            A demanda por habilidades digitais e de programação nunca foi tão alta. Adaptar-se é essencial para se manter relevante.
-          </FeatureCard>
-          <FeatureCard 
-            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>}
-            title="Adaptação de Profissões"
-          >
-            Funções tradicionais estão evoluindo. Médicos, advogados, artistas e muitos outros usarão tecnologia para otimizar seu trabalho.
-          </FeatureCard>
-          <FeatureCard 
-            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>}
-            title="Criação de Oportunidades"
-          >
-            A tecnologia não apenas extingue, mas também cria novas carreiras e oportunidades que ainda nem imaginamos.
-          </FeatureCard>
+        
+        <div>
+          <h3 className="text-2xl font-bold text-cyan-400 mb-4">O Novo Horizonte: As Carreiras do Futuro</h3>
+          <p className="mb-4">
+            Paralelamente à transformação, um universo de novas carreiras está surgindo. Funções que pareciam ficção científica há uma década são hoje algumas das mais promissoras:
+          </p>
+           <ul className="list-disc list-inside space-y-3 pl-4">
+            <li><strong>Engenheiro(a) de Prompt:</strong> Especialistas em "conversar" com IAs para extrair os melhores resultados.</li>
+            <li><strong>Especialista em Ética de IA:</strong> Garantindo que os sistemas de inteligência artificial sejam justos, transparentes e não perpetuem preconceitos.</li>
+            <li><strong>Desenvolvedor(a) de Realidade Aumentada/Virtual:</strong> Criando as experiências imersivas que definirão o futuro do entretenimento, educação e trabalho.</li>
+             <li><strong>Cientista de Dados:</strong> O "tradutor" do bem mais valioso do século XXI: os dados.</li>
+          </ul>
+        </div>
+
+        <div className="!mt-16 pt-8 border-t border-slate-700 text-center">
+          <h3 className="text-2xl font-bold text-white mb-4">O Fio Condutor: A Alfabetização Digital é o Novo Normal</h3>
+          <p className="max-w-3xl mx-auto">
+            Seja qual for o seu caminho, o denominador comum é a tecnologia. Aprender a programar, entender a lógica por trás dos sistemas, analisar dados e ter fluência digital não são mais habilidades de nicho para "pessoas de TI". São competências fundamentais, como ler e escrever foram no século passado.
+          </p>
+          <p className="mt-4 max-w-3xl mx-auto font-semibold text-cyan-300">
+            Aprender tecnologia não é sobre se tornar um programador. É sobre se tornar um profissional preparado para o futuro, seja ele qual for. É o caminho para não ser apenas um espectador, mas um criador ativo na nova economia digital.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
