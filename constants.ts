@@ -15,6 +15,18 @@ export const PLATFORMS: Platform[] = [
     tags: ['Iniciante', 'Avançado', 'Front-end', 'Back-end', 'Data Science'],
   },
   {
+    name: 'Codecademy',
+    url: 'https://www.codecademy.com/',
+    description: 'Cursos interativos que ensinam a codificar em várias linguagens com feedback instantâneo.',
+    tags: ['Iniciante', 'Intermediário', 'Front-end', 'Back-end', 'Data Science'],
+  },
+  {
+    name: 'DataCamp',
+    url: 'https://www.datacamp.com/',
+    description: 'Domine Data Science e IA com cursos interativos de Python, R e SQL.',
+    tags: ['Iniciante', 'Intermediário', 'Data Science', 'Python', 'SQL'],
+  },
+  {
     name: 'CodeCombat',
     url: 'https://codecombat.com/',
     description: 'Aprenda a programar jogando um jogo de RPG. Divertido para todas as idades.',
@@ -27,6 +39,18 @@ export const PLATFORMS: Platform[] = [
     tags: ['Iniciante', 'Gamificação', 'Crianças'],
   },
   {
+    name: 'Minecraft Hour of Code',
+    url: 'https://code.org/en-US/minecraft',
+    description: 'Use blocos de código para explorar o mundo de Minecraft em lições introdutórias.',
+    tags: ['Iniciante', 'Gamificação', 'Crianças', 'Lógica'],
+  },
+  {
+    name: 'Codefinity',
+    url: 'https://codefinity.com/',
+    description: 'Aprenda a codificar com projetos práticos e orientação passo a passo.',
+    tags: ['Iniciante', 'Intermediário', 'Python', 'Data Science'],
+  },
+  {
     name: 'CodinGame',
     url: 'https://www.codingame.com/start/',
     description: 'Aprimore suas habilidades de programação com desafios e competições online.',
@@ -37,6 +61,12 @@ export const PLATFORMS: Platform[] = [
     url: 'https://checkio.org/',
     description: 'Aprenda Python ou TypeScript resolvendo desafios e missões em um mundo de jogos.',
     tags: ['Iniciante', 'Intermediário', 'Gamificação', 'Python', 'TypeScript'],
+  },
+  {
+    name: 'Exercism',
+    url: 'https://exercism.org/',
+    description: 'Desenvolva fluência em 67 linguagens com mentoria humana e exercícios práticos.',
+    tags: ['Intermediário', 'Avançado', 'Desafios', 'Back-end'],
   },
   {
     name: 'Flexbox Froggy',
@@ -67,6 +97,18 @@ export const PLATFORMS: Platform[] = [
     url: 'https://mystery.knightlab.com/',
     description: 'Aprenda conceitos e comandos SQL resolvendo um crime misterioso.',
     tags: ['Iniciante', 'Back-end', 'SQL', 'Gamificação'],
+  },
+  {
+    name: 'DIO',
+    url: 'https://www.dio.me/',
+    description: 'Ecossistema de aprendizado contínuo com bootcamps gratuitos e oportunidades de carreira.',
+    tags: ['Iniciante', 'Avançado', 'Bootcamps', 'Comunidade'],
+  },
+  {
+    name: 'Udemy',
+    url: 'https://www.udemy.com/',
+    description: 'Maior marketplace de cursos online com opções acessíveis em todas as tecnologias.',
+    tags: ['Iniciante', 'Avançado', 'Front-end', 'Back-end', 'Variedade'],
   },
   {
     name: 'Screeps',
@@ -101,12 +143,14 @@ export const CATEGORIES = [
   'Avançado',
   'Front-end',
   'Back-end',
+  'Data Science',
   'CSS',
   'JavaScript',
   'Python',
   'Gamificação',
   'Desafios',
   'Guias',
+  'Crianças',
 ];
 
 export const FAQ_DATA: FaqItem[] = [
